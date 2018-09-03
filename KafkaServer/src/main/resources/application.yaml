@@ -1,0 +1,10 @@
+spring:
+  cloud:
+    stream:
+      kafka:
+        binder:
+          brokers: localhost:9092
+      bindings:
+        kafkatopic1:
+          destination: test
+          contentType: application/json
